@@ -1,9 +1,9 @@
 import time
 
 def run_shopifyql_query(store_id: str, shopifyql: str):
-    """
-    Mock execution of ShopifyQL query
-    """
+    
+    #Mock execution of ShopifyQL query
+    
     print(f"Running ShopifyQL for store: {store_id}")
     print(f"Query: {shopifyql}")
 
@@ -15,7 +15,7 @@ def run_shopifyql_query(store_id: str, shopifyql: str):
             "data": [
                 {"name": "Basic T-Shirts", "units": 120},
                 {"name": "Sneakers", "units": 95},
-                {"name": "Hoodie", "units": 80},
+                {"name": "POLO", "units": 80},
                 {"name": "Cap", "units": 60},
                 {"name": "Jeans", "units": 50}
             ]

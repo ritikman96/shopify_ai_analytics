@@ -11,7 +11,7 @@ agent reasoning, and API design, as allowed by the assignment.
 
 ---
 
-## Architecture
+# Architecture
 
 Client (Swagger / API Client)
 |
@@ -26,37 +26,35 @@ v
 Mock ShopifyQL Execution
 
 
-### Components
-- **FastAPI**: API layer that accepts user questions
-- **Agent Layer**:
+# Components
+- *FastAPI*: API layer that accepts user questions
+- *Agent Layer*:
   - Intent classification
   - ShopifyQL generation
   - Query execution (mock)
   - Business explanation
-- **Shopify Client (Mock)**:
+- *Shopify Client (Mock)*:
   - Simulates ShopifyQL execution and returns realistic data
 
 ---
 
-## Agent Workflow
-1. **Understand Intent**
+# Agent Workflow
+1. *Understand Intent*
    - Detects whether the question is about sales, inventory, or customers
-2. **Plan**
+2. *Plan*
    - Determines required data and time range
-3. **Generate ShopifyQL**
+3. *Generate ShopifyQL*
    - Produces a realistic ShopifyQL query
-4. **Execute**
+4. *Execute*
    - Executes query against mocked Shopify data
-5. **Explain Results**
+5. *Explain Results*
    - Converts raw metrics into simple business language
 
 ---
 
-## API Endpoint
+# API Endpoint
 
-### POST `/ask`
-
-#### Request Body
+# Request Body
 ```json
 {
   "store_id": "demo-store.myshopify.com",
@@ -86,7 +84,7 @@ python_ai_service/
 │   ├── __init__.py
 │   ├── intent.py
 │   ├── shopifyql.py
-│   ├── executor.py
+│   ├── executor.py'
 │   └── explainer.py
 
 
